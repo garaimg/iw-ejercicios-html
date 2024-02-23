@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Reserva de sociedad</h1>
+    <h2>Rellena el siguiente formulario para reservar la sociedad para un día en concreto</h2>
+    <form action="#" method="post">
+        <fieldset>
+          <legend>Datos del usuario</legend>
+          <label for="nombre">Nombre:</label><br>
+          <input type="text" id="nombre" name="nombre" required><br>
+          <label>¿Eres socio?</label><br>
+          <input type="radio" id="socio-si" name="socio" value="si">
+          <label for="socio-si">Sí, soy socio</label><br>
+          <input type="radio" id="socio-no" name="socio" value="no">
+          <label for="socio-no">No soy socio</label><br>
+          <label for="email">Email</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="contrasena">Contraseña</label><br>
+          <input type="password" id="contrasena" name="contrasena" required><br>
+        </fieldset>
+        <fieldset>
+          <legend>Datos de la reserva</legend>
+          <label>Edad:</label><br>
+          <select name="edad" id="edad" required>
+            <option value="menor">Menor de 18</option>
+            <option value="entre_18_65">Entre 18 y 65</option>
+            <option value="mayor_65">Mayor de 65</option>
+          </select><br>
+          <label for="fecha">Fecha:</label><br>
+          <input type="date" id="fecha" name="fecha" required><br>
+          <label for="hora">Hora:</label><br>
+          <input type="time" id="hora" name="hora" required><br>
+          <label for="fecha_hora">Fecha y hora:</label><br>
+          <input type="datetime-local" id="fecha_hora" name="fecha_hora" required><br>
+          <label for="comentarios">Comentarios adicionales:</label><br>
+          <textarea id="comentarios" name="comentarios" rows="4" cols="50"></textarea><br>
+        </fieldset>
+        <input type="checkbox" id="acepto" name="acepto" value="aceptado" required>
+        <label for="acepto">Acepto las condiciones</label><br>
+        <input type="submit" value="ENVIAR">
+      </form>
+    
+</body>
+</html>
